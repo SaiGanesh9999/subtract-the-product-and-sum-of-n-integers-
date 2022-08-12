@@ -1,0 +1,16 @@
+class Solution {
+public:
+    int subtractProductAndSum(int n) {
+        int Summer=0,Production=1,Result;
+    while(n>0)
+    {
+        Summer += n%10;
+        Production *= n%10;
+        n /= 10;
+    }
+    Result = Production-Summer;
+    printf("%d",Result);
+    return Result;
+        
+    }
+};
